@@ -1,0 +1,57 @@
+<div class="fields">
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="prediction.startSalary"
+      placeholder="Start Salary"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="prediction.incrementPercent"
+      placeholder="Start Increment Percent"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="prediction.incrementFrequent"
+      placeholder="Increment Frequent"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="prediction.deduction"
+      placeholder="Deduction"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="prediction.deductionFrequent"
+      placeholder="Deduction Frequent"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="prediction.deductionPercent"
+      placeholder="Deduction Percent"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="prediction.years" placeholder="years" />
+  </mat-form-field>
+
+  <div>
+    <button mat-raised-button color="primary" (click)="save()">Submit</button>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div>
+  <div class="report-buttons grid">
+    <a (click)="showIncrementReport()">
+      <div class="module col-1-4"><h4>increment report</h4></div>
+    </a>
+
+    <a (click)="showDeductionReport()">
+      <div class="module col-1-4"><h4>Deduction report</h4></div>
+    </a>
+
+    <a (click)="showPredictReport()">
+      <div class="module col-1-4"><h4>Predict report</h4></div>
+    </a>
+
+    <div *ngIf="isIncrementReport">
+      <app-increment-report
+        [incrementReports]="incrementReports"
+      ></app-increment-report>
+    </div>
+
+    <div *ngIf="isDeductionReport">
+      <app-deduction-report></app-deduction-report>
+    </div>
+
+    <div *ngIf="isPredictReport">
+      <app-prediction-report></app-prediction-report>
+    </div>
+  </div>
+</div>

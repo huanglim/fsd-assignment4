@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
+            "mainClass": "assignment4.salaryprediction.DemoApplication",
+            "projectName": "salary-prediction"
+        }
+    ]
+}
